@@ -1,6 +1,4 @@
-<h1>New Restaurant 
-  <%= link_to "Back to Restaurants", restaurants_path, class: "btn btn-primary" %>
-</h1>
+<h1>New Restaurant</h1>
 
 <%= simple_form_for(@restaurant) do |f| %>
   <%= f.input :name %>
@@ -12,4 +10,5 @@
   <%= f.input :category %>
 
   <%= f.submit "Create restaurant", class: "btn btn-primary" %>
+  <%= link_to "Back to Restaurants", restaurants_path, class: "btn btn-primary" %>
 <% end %>
